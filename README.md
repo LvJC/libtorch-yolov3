@@ -10,17 +10,17 @@ The code is based on the [pytorch version](https://github.com/ayooshkathuria/pyt
 
 
 ## To compile
-1. cmake3
-2. gcc 5.4 +
+1. cmake >= 3
+2. gcc >= 5.4
 
 
 
 ```
 mkdir build && cd build
-cmake3 -DCMAKE_PREFIX_PATH="your libtorch path" ..
+cmake -DCMAKE_PREFIX_PATH="your libtorch path" ..
 
 # if there is multi versions of gcc, then tell cmake which one your want to use, e.g.:
-cmake3 -DCMAKE_PREFIX_PATH="your libtorch path" -DCMAKE_C_COMPILER=/usr/local/bin/gcc -DCMAKE_CXX_COMPILER=/usr/local/bin/g++ ..
+cmake -DCMAKE_PREFIX_PATH="your libtorch path" -DCMAKE_C_COMPILER=/usr/bin/gcc-5 -DCMAKE_CXX_COMPILER=/usr/bin/g++-5 ..
 ```
 
 
